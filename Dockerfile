@@ -6,4 +6,7 @@ ADD --chown=keycloak:keycloak https://github.com/Herdo/keycloak-remember-me-auth
 # Install Discord identity provider extension
 ADD --chown=keycloak:keycloak https://github.com/wadahiro/keycloak-discord/releases/download/v0.6.1/keycloak-discord-0.6.1.jar /opt/keycloak/providers/keycloak-discord-0.6.1.jar
 
+# Copy custom themes
+COPY --chown=keycloak:keycloak themes/ /opt/keycloak/themes/
+
 RUN /opt/keycloak/bin/kc.sh build
