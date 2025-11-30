@@ -12,9 +12,7 @@ services:
       - keycloak-network
 
   keycloak:
-    build:
-      context: .
-      dockerfile: Dockerfile
+    image: ghcr.io/scottylabs/keycloak:${KEYCLOAK_VERSION:-main}
     command: start
     environment:
       # Database
