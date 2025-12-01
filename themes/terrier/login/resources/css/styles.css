@@ -1,7 +1,10 @@
+/* Import Inter font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
 /* GLOBAL RESET & LAYOUT */
 body {
     background-color: #e5e5e5; /* Light gray background from screenshot */
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,7 +18,7 @@ body {
 body > div {
     background-color: #ffffff;
     width: 100%;
-    max-width: 400px;
+    max-width: 600px;
     padding: 40px;
     border-radius: 20px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
@@ -47,9 +50,7 @@ body > div {
     width: 28px;
     height: 28px;
     margin-right: 12px;
-    background-color: black;
-    /* Simple geometric approximation of the dog logo */
-    clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 100%, 0% 100%, 0% 20%);
+    background: url('../img/scottylabs_dog.png') no-repeat center;
     border-radius: 4px;
 }
 
@@ -111,7 +112,8 @@ button[data-password-toggle] {
 /* PRIMARY BUTTON (Sign In) */
 #kc-login {
     width: 100%;
-    background-color: #1a1a1a; /* Dark black/charcoal */
+    border-radius: 100px;
+    background: #1E1E1E;
     color: #ffffff;
     font-weight: 600;
     font-size: 16px;
